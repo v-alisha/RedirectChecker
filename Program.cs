@@ -24,7 +24,7 @@ namespace alishadev
             List<RedirectEntry> oldRedirectEntries = new();
             string oldRedirectsContent = File.ReadAllText(oldRedirectsFilePath);
             string newRedirectsContent = File.ReadAllText(newRedirectsFilePath);
-            string localesContent = Properties.Resources.locales;
+            string localesContent = RedirectChecker.Properties.Resources.locales;
 
             // Build lists.
             string[] oldRedirects = oldRedirectsContent.Split(new[] { '\r', '\n' }).Where(x => x.IsNotEmpty()).Select(x => x.Trim(new[] { ',', ' ' })).ToArray();

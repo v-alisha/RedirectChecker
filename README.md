@@ -22,9 +22,9 @@ Items 1-3 are flagged as errors, 4-6 as warnings.
 
 1. In the file `Program.cs`, set the paths for:
 
-   - `oldRedirectsFilePath`: You provide this file. It should contain all existing redirects, each on a separate line. Commas and surrounding braces are ignored, so can be left in or omitted.
+   - `oldRedirectsFilePath`: You provide this path to a `.json` or `.txt` file that should contain all existing redirects, each on a separate line. Commas and surrounding braces are ignored, so can be left in or omitted.
     
-   - `newRedirectsFilePath`: You provide this file. It should contain any new redirects, each on a separate line. Commas and surrounding braces are ignored, so can be left in or omitted. If you're just checking old redirects, then this can be an empty file.
+   - `newRedirectsFilePath`: You provide this path to a `.json` or `.txt` file that should contain any new redirects, each on a separate line. Commas and surrounding braces are ignored, so can be left in or omitted. If you're just checking old redirects, then this can be an empty file.
 
    - `analysisCsvFilePath`: On completion, the program creates a CSV report at this path. The app validates the combined set of redirects from both of the above files, and identifies the location of problematic redirects by `Old:<line number>` or `New:<line number>`.
 
